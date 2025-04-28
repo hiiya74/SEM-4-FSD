@@ -5,7 +5,7 @@ app.use("/xyz",function(req,res,next){
     next();
 },function(req,res){
     res.set("Content-Type","text/html");
-    res.write("<h2>hello</h2><h3>WELCOME TO LJU</h3><h3>tutorial on middleware</h3>");
+    res.write("<h2>hi</h2><h3>WELCOME TO LJU</h3><h3>tutorial on middleware</h3>");
     res.send();
 })
 app.listen(3765)
