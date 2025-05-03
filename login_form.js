@@ -9,18 +9,18 @@ app.post('/login', (req, res, next)=>{
 next();
 })
 app.post('/login', (req, res)=>{
-    if(req.body.checkbox == "on"){
-        res.write('thank you for subscribing <a href="/">logout</a>');
+    if(req.body.subscribe == "on"){
+        res.write('<h4 style="color:blue;">thank you for subscribing😄</h4> <a href="/">logout</a>');
     }
     else{
-        res.write('thank you for login you can also subscribe <a href="/">logout</a>');
+        res.write('<h4 style="color:blue;" >thank you for login!☺️  please subscribe</h4> <a href="/sub">subscibe</a>');
     }
     res.send();
 })
 
-app.get('subscribe', (req, res)=>{
+app.get('/sub', (req, res)=>{
     res.set("Content-Type", "text/html");
-    res.write('<h3>thank you for subscribing</h3> <a href="/">logout</a>');
+    res.write('<h4 style="color:blue;">thank you for subscribing😄</h4> <a href="/">logout</a>');
     res.send();
 })
-app.listen(3676)
+app.listen(3657);
