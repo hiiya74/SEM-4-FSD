@@ -1,0 +1,18 @@
+html
+    body
+        form(action="/data", method="post")
+            div
+                label Name :
+                input(type="text", name="n", id="text")
+            div
+                label Email:
+                input(type="email", name="e", id="email")
+            div
+                label course:
+                input(type="radio", name="c", value="IT")
+                |IT
+                input(type="radio", name="c", value="CE")
+                |CE
+            div 
+                input(type="submit", value="submit")
+            

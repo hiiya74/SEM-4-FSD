@@ -1,0 +1,61 @@
+//vmimp 100%
+html
+    body
+        //1
+        h1 LJU 
+
+        //2
+        h1(style="color:green") let's learn
+
+        //3
+        p
+           i italic para
+              b(style="color:blue") para
+           b bold pargraph
+
+        //4
+        ul 
+            li mango
+            li watermelon
+
+        //5
+        p
+            | this fill will not be
+            | render properly if
+            | programmer does not
+            | make indentation
+
+        //6
+        a(
+            href='_about'
+            target="_blank"
+            style="color:purple"
+        ) About 
+
+        //7 multiple attributes
+        table(style="border:2px solid; color:red")
+            tr
+                th Name
+                th id
+            tr
+                td abc
+                td 123
+
+        //8 unbuffered code
+        - var number=2
+        - var color="black"
+        - var list=["india",'USA','UK']
+
+        //9 buffered code
+        h4="3 times number is "+number*3
+        h3="i like "+color+" color"
+        h3="country"+list[2]
+
+        //10
+        //this is buffered comment
+        //this is unbuffered comment it does not appear in html file
+        //
+          this is a
+          multi line
+          comment
+        
